@@ -67,3 +67,54 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f9f0f3;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+nav a {
+  color: #a45d7c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #d67fa0;
+}
+
+.flower-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.flower-item img:hover {
+  transform: scale(1.1);
+}
+
+.order-btn {
+  background-color: #f5c7d1;
+  color: #5a2c3a;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #d67fa0;
+}
+
+blockquote {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+blockquote.show {
+  opacity: 1;
+}
