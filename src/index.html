@@ -7,45 +7,167 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>SoftBloom</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#flowers">Цветы</a></li>
-        <li><a href="#quote">Цитата</a></li>
-        <li><a href="#contact">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>О нашем магазине</h2>
-    <p>SoftBloom — это мир нежности и красоты. Мы предлагаем розовые пионы, розы и лилии.</p>
-  </section>
+<!-- Навбар -->
+<nav>
+  <a href="#about" class="scroll-link">О нас</a>
+  <a href="#flowers" class="scroll-link">Цветы</a>
+  <a href="#categories" class="scroll-link">Категории</a>
+  <a href="#gifts" class="scroll-link">Подарки</a>
+  <a href="#contact" class="scroll-link">Контакты</a>
+</nav>
 
-  <section id="flowers">
-    <h2>Наши цветы</h2>
-    <div class="gallery">
-      <img src="images/peonies.jpg" alt="Розовые пионы">
-      <img src="images/roses.jpg" alt="Розовые розы">
-      <img src="images/lilies.jpg" alt="Розовые лилии">
+<!-- О нас -->
+<section id="about">
+  <h2>О нас</h2>
+  <p>SoftBloom — это нежный уголок цветов и подарков. Каждый лепесток вдохновлён красотой.</p>
+  <blockquote>«Цветы — улыбки природы.»</blockquote>
+</section>
+
+<!-- Цветы -->
+<section id="flowers">
+  <h2>Наши цветы</h2>
+  <div class="flower-container">
+    <!-- Цветы добавляются через data-category -->
+    <div class="flower-item" data-category="all">
+      <img src="../images/50 роз.jpg" alt="50 роз">
+      <h3>50 роз</h3>
+      <p>В подарок бенто.</p>
+      <p class="price">59900 ₸</p>
+      <button class="order-btn" data-item="50 роз">Заказать</button>
     </div>
-  </section>
+    <div class="flower-item" data-category="all">
+      <img src="../images/1000 роз.jpg" alt="1000 роз">
+      <h3>1000 роз</h3>
+      <p>В подарок мишка.</p>
+      <p class="price">120000 ₸</p>
+      <button class="order-btn" data-item="1000 роз">Заказать</button>
+    </div>
+    <div class="flower-item" data-category="all">
+      <img src="../images/Розовые пионы.jpg" alt="Розовые пионы">
+      <h3>Розовые пионы</h3>
+      <p>Нежные пионы для любого события.</p>
+      <p class="price">25000 ₸</p>
+      <button class="order-btn" data-item="Розовые пионы">Заказать</button>
+    </div>
+    <div class="flower-item" data-category="all">
+      <img src="../images/Розовые розы.jpg" alt="Розовые розы">
+      <h3>Розовые розы</h3>
+      <p>Классика нежности — розы для любимых.</p>
+      <p class="price">17000 ₸</p>
+      <button class="order-btn" data-item="Розовые розы">Заказать</button>
+    </div>
+    <div class="flower-item" data-category="all">
+      <img src="../images/Розовые лилии.jpg" alt="Розовые лилии">
+      <h3>Розовые лилии</h3>
+      <p>Элегантные лилии, чтобы подчеркнуть утончённость подарка.</p>
+      <p class="price">15000 ₸</p>
+      <button class="order-btn" data-item="Розовые лилии">Заказать</button>
+    </div>
+    <div class="flower-item" data-category="8marta">
+      <img src="../images/Тюльпаны.jpg" alt="Тюльпаны">
+      <h3>Тюльпаны</h3>
+      <p>Идеальны на 8 марта.</p>
+      <p class="price">10000 ₸</p>
+      <button class="order-btn" data-item="Тюльпаны">Заказать</button>
+    </div>
+    <div class="flower-item" data-category="all">
+      <img src="../images/Гортензии.jpg" alt="Гортензии">
+      <h3>Гортензии</h3>
+      <p>Пышные гортензии для радости и уюта.</p>
+      <p class="price">100000 ₸</p>
+      <button class="order-btn" data-item="Гортензии">Заказать</button>
+    </div>
+    <div class="flower-item" data-category="mini">
+      <img src="../images/Гипсофилы с розами.jpg" alt="Гипсофилы с розами">
+      <h3>Гипсофилы с розами</h3>
+      <p>Мини-букет для маленьких, но трогательных подарков.</p>
+      <p class="price">5000 ₸</p>
+      <button class="order-btn" data-item="Гипсофилы с розами">Заказать</button>
+    </div>
+    <div class="flower-item" data-category="mini">
+      <img src="../images/Розовая гипсофила.jpg" alt="Розовая гипсофила">
+      <h3>Розовая гипсофила</h3>
+      <p>Мини-букет нежности для любого случая.</p>
+      <p class="price">3500 ₸</p>
+      <button class="order-btn" data-item="Розовая гипсофила">Заказать</button>
+    </div>
+  </div>
+</section>
 
-  <section id="quote">
-    <blockquote>“Цветы — это улыбка природы для души.”</blockquote>
-  </section>
+<!-- Категории -->
+<section id="categories">
+  <h2>Популярные категории</h2>
+  <div class="category-list">
+    <button class="category-btn" data-category="all">На день рождения</button>
+    <button class="category-btn" data-category="8marta">На 8 марта</button>
+    <button class="category-btn" data-category="all">Популярные</button>
+    <button class="category-btn" data-category="mini">Мини-букеты</button>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Контакты</h2>
-    <p>Адрес: Бейбитшилик 39</p>
-  </section>
+<!-- Подарки -->
+<section id="gifts">
+  <h2>Дополнительные подарки</h2>
+  <div class="gift-item">
+    <img src="../images/Мишка.jpg" alt="Мишка">
+    <p>Мишка</p>
+    <p class="price">4000 ₸</p>
+    <button class="order-btn" data-item="Мишка">Заказать</button>
+  </div>
+  <div class="gift-item">
+    <img src="../images/Мишка акула.jpg" alt="Мишка Акула">
+    <p>Мишка Акула</p>
+    <p class="price">4500 ₸</p>
+    <button class="order-btn" data-item="Мишка Акула">Заказать</button>
+  </div>
+  <div class="gift-item">
+    <img src="../images/Клубника в шоколаде.jpg" alt="Клубника в шоколаде">
+    <p>Клубника в шоколаде</p>
+    <p class="price">6000 ₸</p>
+    <button class="order-btn" data-item="Клубника в шоколаде">Заказать</button>
+  </div>
+  <div class="gift-item">
+    <img src="../images/Бенто.jpg" alt="Бенто">
+    <p>Бенто</p>
+    <p class="price">3500 ₸</p>
+    <button class="order-btn" data-item="Бенто">Заказать</button>
+  </div>
+  <div class="gift-item">
+    <img src="../images/Торт.jpg" alt="Торт">
+    <p>Торт</p>
+    <p class="price">5000 ₸</p>
+    <button class="order-btn" data-item="Торт">Заказать</button>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 SoftBloom</p>
-  </footer>
+<!-- Контакты и форма заказа -->
+<section id="contact">
+  <h2>Контакты и доставка</h2>
+  <p>Адрес: Бейбитшилик 39</p>
+  <p>Телефон: +77753546950</p>
+  <p>Оплата и доставка: наличные, карта, доставка по городу</p>
 
-  <script src="script.js"></script>
+  <!-- Модальное окно / форма -->
+  <div id="order-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Оформить заказ</h3>
+      <form id="order-form">
+        <input type="text" id="name" placeholder="Ваше имя" required>
+        <input type="text" id="address" placeholder="Адрес" required>
+        <input type="text" id="phone" placeholder="Номер телефона" required>
+        <input type="text" id="item" placeholder="Название товара" readonly>
+        <button type="submit">Отправить заказ</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 SoftBloom</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
